@@ -1,0 +1,20 @@
+git remote -v                    # 查看远程服务器地址和仓库名称
+git remote show origin           # 查看远程服务器仓库状态
+git remote add origin git@github:robbin/robbin_site.git         # 添加远程仓库地址
+git remote set-url origin git@github.com:robbin/robbin #修改远程地址
+git remote rm #删除远程创库地址
+
+==================================================
+//拉取远程仓库到本地tep分支
+git fetch origin master:tmp
+//查看是否有更改，如果有，考虑要不要合并
+git diff tmp 
+//合并分支到本地
+git merge tmp
+-----------------
+git pull：相当于是从远程获取最新版本并merge到本地
+git pull origin master
+这一条是上面三条的功能
+建议使用上面三条，因为你不确定远程仓库的就是最好的版本
+
+

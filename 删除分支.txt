@@ -1,0 +1,5 @@
+1、删除远程分支
+git push origin :branch-name
+冒号前面的空格不能少，原理是把一个空分支push到server上，相当于删除该分支。
+2、删除本地分支，强制删除用-D
+$ git branch -d branchName
